@@ -14,7 +14,7 @@ body{
     background: url("./Images/bg.jpg") no-repeat center center/cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     text-align: center;
     color: var(--text-color);
     text-shadow: var(--text-shadow);
@@ -31,9 +31,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 .text{
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .text>*{
     margin:16px 24px;
@@ -43,4 +47,20 @@ body{
     font-size: 36px;
     margin-top: 10px;
     box-shadow: rgb(0, 0, 0) 1px 1px 2px 0px inset, rgba(27, 27, 27, 0.5) -1px -1px 2px 0px inset;
+ 
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        margin-top: 20px;
+    }
+    #output{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        grid-gap: 16px;
+    }
+    .text>*{
+        margin:16px;
+    }
 }
