@@ -10,9 +10,8 @@ const secondsRemaining=document.querySelector("#secondsRemaining")
 const H1=document.querySelector('h1')
 
 let presentDate=new Date();
-let levelOneStart=new Date(2021,11,30)
-levelOneStart.setHours( levelOneStart.getHours()-1)
-levelOneStart.setMinutes( levelOneStart.getMinutes() -28)
+let levelOneStart=new Date(2022,00,02)
+levelOneStart.setHours( levelOneStart.getHours()+18)
 
 function timer(presentDate){
     let difference=levelOneStart.getTime()-presentDate.getTime()
